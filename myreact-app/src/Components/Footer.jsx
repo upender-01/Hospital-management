@@ -58,7 +58,25 @@ const Footer = () => {
       </div>
 
       <div className="mt-10 border-t border-gray-700 pt-4 text-center text-sm text-gray-400">
-        © {new Date().getFullYear()} BHERA Society. All rights reserved.
+       <p> © {new Date().getFullYear()} BHERA Society. All rights reserved.
+       </p>
+         {/* Marquee for large screens */}
+        <div className="hidden md:block overflow-hidden whitespace-nowrap mt-2">
+          <div className="inline-block animate-marquee">
+            Designed by Bhukya Upender &nbsp; | &nbsp;
+            Qualification: B.Tech (Electronics and Communication Engineering) - IIT BHU Varanasi &nbsp; | &nbsp;
+             Passionate developer eager to build innovative web applications. &nbsp; | &nbsp;
+             <a href="mailto:bhukyaupender31@gmail.com" className="text-blue-500 hover:text-green-500 font-bold shadow-lg shadow-blue-500/50 hover:shadow-green-500/50  ">bhukyaupender31@gmail.com</a>
+          </div>
+        </div>
+         {/* Static multi-line text for small/medium screens */}
+        <div className="block md:hidden mt-2 text-xs text-left">
+          <p>Designed by Bhukya Upender</p>
+          <p>Qualification: B.Tech (Electronics and Communication Engineering) - IIT BHU Varanasi</p>
+          <p>Passionate developer eager to build innovative web applications.</p>
+           <a href="mailto:bhukyaupender31@gmail.com" className="text-blue-500 hover:text-green-500 font-bold">bhukyaupender31@gmail.com</a>
+          
+        </div>
       </div>
     </footer>
   );
