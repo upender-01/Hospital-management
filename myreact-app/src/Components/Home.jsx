@@ -28,7 +28,7 @@ const Home = () => {
       <a href="/aboutus" className="  block hover:bg-green-500 flex px-[1rem] py-[0.5rem] rounded-md hover:text-white hover:shadow-lg hover:shadow-500/50">About Us</a>
       <a href="/ourservices" className=" block hover:bg-green-500 flex px-[1rem] py-[0.5rem] rounded-md hover:text-white hover:shadow-lg hover:shadow-500/50">Our Services</a>
       <a href="/contact" className=" block hover:bg-green-500 flex px-[1rem] py-[0.5rem] rounded-md hover:text-white hover:shadow-lg hover:shadow-500/50">Contact Us</a>
-      <a href="/AboutDr" className=" block hover:bg-green-500 flex px-[1rem] py-[0.5rem] rounded-md hover:text-white hover:shadow-lg hover:shadow-500/50">Doctor</a>
+      <a href="/aboutDr" className=" block hover:bg-green-500 flex px-[1rem] py-[0.5rem] rounded-md hover:text-white hover:shadow-lg hover:shadow-500/50">Doctor</a>
     </nav>
     <div className="space-x-[1rem] flex justify-center items-center">
       <Donatebutton/>
