@@ -28,7 +28,10 @@ const transporter = nodemailer.createTransport({
 });
 
 const app = express();
-app.use(cors());
+app.use(cors({
+  origin: 'https://bherasociety.vercel.app',  // or Vercel URL
+  credentials: true  // if you're using cookies/session auth
+}));
 app.use(express.json());
 app.use(bodyParser.json());
 

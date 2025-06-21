@@ -19,7 +19,7 @@ const AppointmentForm = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post("http://localhost:5000/appointments", formData);
+      await axios.post("https://bherasociety.onrender.com/appointments", formData);
       alert("Appointment booked successfully!");
       setFormData({ name: "", phonenumber: "", disease_name: "" });
     } catch (err) {
