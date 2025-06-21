@@ -5,7 +5,7 @@ import Bhavanihospitalimage from "../assets/bhavanieyecare.jpg";
 
 const HospitalSection = () => {
   return (
-    <section className="py-10 px-4 md:px-20 bg-gray-50 dark:bg-gray-900 text-white">
+    <section className="py-10 px-4 md:px-20 bg-gray-50 dark:bg-gray-900">
       <h2 className="text-3xl font-bold text-center text-gray-800 dark:text-white mb-8">
         Our Hospitals
       </h2>
@@ -22,12 +22,12 @@ const HospitalSection = () => {
         {/* Hospital Info */}
         <div className="w-full md:w-1/2 space-y-4 ">
         <div>
-          <h1 className="font-bold text-[1.5rem]  margin-0 " >Shree Sathya Lions Eye Hospital</h1>
-          <h1 className="font-bold text-[1.5rem] italic">Facilities</h1>
-           <p>Eyecare services</p>
+          <h1 className="font-bold text-[1.5rem]  margin-0 lg:text-white sm:text-black" >Shree Sathya Lions Eye Hospital</h1>
+          <h1 className="font-bold text-[1.5rem] italic lg:text-white sm:text-black ">Facilities</h1>
+           <p className=" font-semibold lg:text-white sm:text-black">Eyecare services</p>
         </div>
           <div>
-             <h1 className="font-bold italic text-[1.5rem]">Address</h1>
+             <h1 className="font-bold italic text-[1.5rem] lg:text-white sm:text-black">Address</h1>
 
             <p className="flex items-center text-gray-700 dark:text-gray-300 italic">
               <FaMapMarkerAlt className="text-red-500 mr-2" />
@@ -69,12 +69,12 @@ const HospitalSection = () => {
         {/* Hospital Info */}
         <div className="w-full md:w-1/2 space-y-4 ">
         <div>
-          <h1 className="font-bold text-[1.5rem]  margin-0 " >Bhavani Eye Care Hospital</h1>
-          <h1 className="font-bold text-[1.5rem] italic">Facilities</h1>
-           <p>Eyecare services</p>
+          <h1 className="font-bold text-[1.5rem]  margin-0 lg:text-white sm:text-black " >Bhavani Eye Care Hospital</h1>
+          <h1 className="font-bold text-[1.5rem] italic lg:text-white sm:text-black">Facilities</h1>
+           <p className="font-semibold lg:text-white sm:text-black">Eyecare services</p>
         </div>
           <div>
-             <h1 className="font-bold italic text-[1.5rem]">Address</h1>
+             <h1 className="font-bold italic text-[1.5rem] lg:text-white sm:text-black">Address</h1>
 
             <p className="flex items-center text-gray-700 dark:text-gray-300 italic">
               <FaMapMarkerAlt className="text-red-500 mr-2" />

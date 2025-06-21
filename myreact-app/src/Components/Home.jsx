@@ -14,41 +14,21 @@ const Home = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   return (
     <main className="scroll-smooth bg-white text-gray-900 dark:text-gray-100 transition-colors">
-      {/* Contact Bar (scrolls away) */}
-<div className="bg-blue-700 text-white py-2 px-4 flex flex-col lg:justify-around md:justify-around sm:flex-row sm:justify-between items-center text-center font-semibold">
-  <div className="flex flex-col sm:flex-row items-center gap-4 py-[0.8rem]">
-    <div className="flex items-center gap-2">
-      <FaPhone className="rotate-90" />
-      <a href="tel:+918074995761">+91 8074995761</a>
-    </div>
-    <div className="flex items-center gap-2">
-      <FaEnvelope />
-      <a href="mailto:bhukyaupender31@gmail.com">bhukyaupender31@gmail.com</a>
-    </div>
-  </div>
-  <div className="flex gap-4 mt-2 sm:mt-0">
-    <a href="#"><FaEnvelope size={20} /></a>
-    <a href="#"><FaGoogle size={20} /></a>
-    <a href="#"><FaFacebook size={20} /></a>
-    <a href="#"><FaInstagram size={20} /></a>
-  </div>
-</div>
-
 {/* Navbar (Fixed on scroll) */}
 <div className="fixed top-0 left-0 w-full z-50 bg-gray-200 shadow-md">
   <div className="flex flex-col sm:flex-row items-center justify-around text-black px-4 py-2">
-    <div className="flex justify-between w-full sm:w-auto items-center">
+    <div className="flex justify-around sm:py-[0.3rem] w-full sm:w-auto items-center">
      <a href="/"> <img src={Logo} className="h-[5rem] sm:h-[8rem] w-auto" alt="Logo" /></a>
       <button className="sm:hidden text-2xl" onClick={() => setMenuOpen(!menuOpen)}>
         <FaBars />
       </button>
     </div>
-    <nav className={`flex-col sm:flex-row flex gap-4 sm:gap-8 font-bold items-center ${menuOpen ? "flex" : "hidden sm:flex"} mt-2 sm:mt-0`}>
-      <a href="/" className="hover:text-blue-500">Home</a>
-      <a href="/aboutus" className="hover:text-blue-500">About Us</a>
-      <a href="/ourservices" className="hover:text-blue-500">Our Services</a>
-      <a href="/contact" className="hover:text-blue-500">Contact Us</a>
-      <a href="/AboutDr" className="hover:text-blue-500">Doctor</a>
+    <nav className={`flex-col sm:flex-row flex gap-2 sm:gap-8 font-bold items-center ${menuOpen ? "flex" : "hidden sm:flex"} mt-2 sm:mt-0`}>
+      <a href="/" className=" block  flex hover:bg-green-500 px-[1rem] py-[0.5rem] rounded-md hover:text-white hover:shadow-lg hover:shadow-500/50 ">Home</a>
+      <a href="/aboutus" className="  block hover:bg-green-500 flex px-[1rem] py-[0.5rem] rounded-md hover:text-white hover:shadow-lg hover:shadow-500/50">About Us</a>
+      <a href="/ourservices" className=" block hover:bg-green-500 flex px-[1rem] py-[0.5rem] rounded-md hover:text-white hover:shadow-lg hover:shadow-500/50">Our Services</a>
+      <a href="/contact" className=" block hover:bg-green-500 flex px-[1rem] py-[0.5rem] rounded-md hover:text-white hover:shadow-lg hover:shadow-500/50">Contact Us</a>
+      <a href="/AboutDr" className=" block hover:bg-green-500 flex px-[1rem] py-[0.5rem] rounded-md hover:text-white hover:shadow-lg hover:shadow-500/50">Doctor</a>
     </nav>
     <div className="space-x-[1rem] flex justify-center items-center">
       <Donatebutton/>

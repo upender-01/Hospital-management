@@ -6,6 +6,10 @@ myreact-app/node_modules/
 backend/.env
 myreact-app/.env
 
+node_modules/
+dist/
+.env
+
 # Build folders
 myreact-app/dist/
 backend/build/
