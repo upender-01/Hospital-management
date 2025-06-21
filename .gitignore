@@ -1,0 +1,17 @@
+# Node modules
+backend/node_modules/
+myreact-app/node_modules/
+
+# Environment files
+backend/.env
+myreact-app/.env
+
+# Build folders
+myreact-app/dist/
+backend/build/
+
+# Logs
+*.log
+
+# System
+.DS_Store
